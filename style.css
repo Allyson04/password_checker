@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.backgroundYellow {
+    background: yellow;
+}
+
+.backgroundRed {
+    background: red;
+}
+
+.backgroundGreen {
+    background: green;
+}
