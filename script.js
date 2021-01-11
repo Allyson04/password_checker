@@ -7,5 +7,11 @@ function focusButton () {
 //then we create restorePassword, to get the value on the input and define if the background turns red or green
 
 function restorePassword () {
+    var numberOfCharacters = document.getElementById("password_input").value.length
 
+    if (numberOfCharacters <= 8) {
+        document.getElementById("password_input").className = "backgroundRed"
+    } else if (numberOfCharacters > 8) {
+        document.getElementById("password_input").className = "backgroundGreen"
+    }
 }
