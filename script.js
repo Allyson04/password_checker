@@ -1,17 +1,18 @@
-// First we create the function responsible for making the input background turn yellow
+// // First we create the function responsible for making the input background turn yellow
 
-function focusButton () {
-    document.getElementById("password_input").className = "backgroundYellow"
-}
+// function focusButton () {
+//     document.getElementById("password_input").className = "backgroundYellow"
+// }
 
-//then we create restorePassword, to get the value on the input and define if the background turns red or green
+// //then we create restorePassword, to get the value on the input and define if the background turns red or green
 
-function restorePassword () {
-    var numberOfCharacters = document.getElementById("password_input").value.length
+// function restorePassword () {
+//     var numberOfCharacters = document.getElementById("password_input").value.length
 
-    if (numberOfCharacters <= 8) {
-        document.getElementById("password_input").className = "backgroundRed"
-    } else if (numberOfCharacters > 8) {
-        document.getElementById("password_input").className = "backgroundGreen"
-    }
-}
+//     if (numberOfCharacters <= 8) {
+//         document.getElementById("password_input").className = "backgroundRed"
+//     } else if (numberOfCharacters > 8) {
+//         document.getElementById("password_input").className = "backgroundGreen"
+//     }
+// }
+
