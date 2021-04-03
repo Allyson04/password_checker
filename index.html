@@ -12,15 +12,27 @@
         <button onclick="enableCreateSection()">Password Creator</button>
         <button onclick="enableCheckSection()">Password Checker</button>
     </div>
+    <h1>Hi!</h1>
     <section id="password-checker">
-        <h1>Hi!</h1>
             <p>Check the security of your password here!</p>
             <p>Don't worry, we <strong>don't</strong> store your password here.</p>
             <p>Just insert your password down there and depending on the color, your password is aproved or not.</p>
             <input type="text" onfocus="focusButton()" onblur="restorePassword()" id="password_input">
     </section>
     <section id="password-creator">
+        <h4>Don't know what password to use? Let me help you.</h4>
+        <form action="" id="form-createPassword">
+            <label for="password_size">How big do you want it?</label>
+            <input type="number" name="password_size" id="password_size">
 
+            <label for="letter_types">Which type of letters?</label>
+            <input type="checkbox" name="letter_types" id="letter_types_nmb">Numbers
+            <input type="checkbox" name="letter_types" id="letter_types_uppAlpha">Uppercase Alphabetic letters
+            <input type="checkbox" name="letter_types" id="letter_types_lowAlpha">Lowercase Alphabetic letters
+
+            Considering this, your password is:
+            <input type="text">
+        </form>
     </section>
 </body>
 </html>
