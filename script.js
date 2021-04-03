@@ -16,3 +16,14 @@
 //     }
 // }
 
+// document.querySelector('button[onclick="enableCreateSection()"]').style.display = "none"
+
+function enableCheckSection() {
+    document.getElementById("password-creator").style.display = "none"
+    document.getElementById("password-checker").style.display = "block"
+}
+
+function enableCreateSection() {
+    document.getElementById("password-checker").style.display = "none"
+    document.getElementById("password-creator").style.display = "block"
+}
