@@ -27,3 +27,58 @@ function enableCreateSection() {
     document.getElementById("password-checker").style.display = "none"
     document.getElementById("password-creator").style.display = "block"
 }
+
+// check password
+
+function focusButton () {
+    console.log("focused")
+}
+
+function restorePassword() {
+    let passwordValue = document.getElementById("password_input").value
+
+    // if (passwordValue.length > 8) {
+    //     // document.getElementById("password_input").className = "backgroundGreen"
+    //     console.log("good")
+    // } else {
+    //     console.log("bad")
+    // }
+
+    // if (numberOfCharacters.match(/[A-Z]/g)) {
+    //     // document.getElementById("password_input").className = "backgroundGreen"
+    //     console.log("good")
+    // } else {
+    //     console.log("bad")
+    // }
+
+    good = "Aproved!"
+    bad = "Forgot it"
+
+    passwordLengthAval = passwordValue.length >= 8 ? good : bad
+
+    passwordUpperCaseAval = passwordValue.match(/[A-Z]/g) ? good : bad
+
+    passwordLowerCaseAval = passwordValue.match(/[a-z]/g) ? good : bad
+
+    requirements = [
+        passwordLengthAval,
+        passwordUpperCaseAval,
+        passwordLowerCaseAval
+    ]
+
+    console.log("///")
+    for (i=0; i<3; i++) {
+        console.log(requirements[i])
+    }
+    console.log("///")
+
+    // if (numberOfCharacters.length <= 8) {
+    //     document.getElementById("password_input").className = "backgroundRed"
+    // }
+
+    // if (numberOfCharacters.match(/[A-Z]/g)) {
+    //     console.log("nice")
+    // } else {
+    //     console.log("not")
+    // }
+}
